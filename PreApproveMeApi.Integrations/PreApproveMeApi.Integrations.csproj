@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B28925FA-1FEC-4DB4-B7A0-272772E4BD28}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PreApproveMeApi.Integrations</RootNamespace>
+    <AssemblyName>PreApproveMeApi.Integrations</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Loan\LoanIntegrationBaseModel.cs" />
+    <Compile Include="Loan\LoanIntegrationModel_1_0.cs" />
+    <Compile Include="Loan\Models\LoanIntegrationAddressDetailsModel.cs" />
+    <Compile Include="Loan\Models\LoanIntegrationAddressModel.cs" />
+    <Compile Include="Loan\Models\LoanIntegrationAZConditionsModel.cs" />
+    <Compile Include="Loan\Models\LoanIntegrationAZDeclarationsModel.cs" />
+    <Compile Include="Loan\Models\LoanIntegrationCompanyModel.cs" />
+    <Compile Include="Loan\Models\LoanIntegrationConstructionRefinanceDataModel.cs" />
+    <Compile Include="Loan\Models\LoanIntegrationPropertyDetailsModel.cs" />
+    <Compile Include="Loan\Models\LoanIntegrationRealtorInfoModel.cs" />
+    <Compile Include="Loan\Models\LoanIntegrationUserInfoModel.cs" />
+    <Compile Include="Loan\Models\LoanIntegrationValueModel.cs" />
+    <Compile Include="Loan\Types\LoanIntegrationAddressType.cs" />
+    <Compile Include="Loan\Types\LoanIntegrationAmortization.cs" />
+    <Compile Include="Loan\Types\LoanIntegrationAssetType.cs" />
+    <Compile Include="Loan\Types\LoanIntegrationConditionStatus.cs" />
+    <Compile Include="Loan\Types\LoanIntegrationDebtType.cs" />
+    <Compile Include="Loan\Types\LoanIntegrationEmploymentStatus.cs" />
+    <Compile Include="Loan\Types\LoanIntegrationEthnicity.cs" />
+    <Compile Include="Loan\Types\LoanIntegrationFrequencyType.cs" />
+    <Compile Include="Loan\Types\LoanIntegrationGender.cs" />
+    <Compile Include="Loan\Types\LoanIntegrationIncomeType.cs" />
+    <Compile Include="Loan\Types\LoanIntegrationLoanPurpose.cs" />
+    <Compile Include="Loan\Types\LoanIntegrationMaritalStatus.cs" />
+    <Compile Include="Loan\Types\LoanIntegrationProgramType.cs" />
+    <Compile Include="Loan\Types\LoanIntegrationQualificationType.cs" />
+    <Compile Include="Loan\Types\LoanIntegrationRealEstateStatus.cs" />
+    <Compile Include="Loan\Types\LoanIntegrationRealEstateType.cs" />
+    <Compile Include="Loan\Types\LoanIntegrationRefinancePurpose.cs" />
+    <Compile Include="Loan\Types\LoanIntegrationResidenceOwnership.cs" />
+    <Compile Include="Loan\Types\LoanIntegrationResidenceType.cs" />
+    <Compile Include="Loan\Types\LoanIntegrationTitleType.cs" />
+    <Compile Include="Loan\Types\LoanIntegrationValueType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
