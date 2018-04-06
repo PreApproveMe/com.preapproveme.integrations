@@ -177,6 +177,9 @@ namespace PreApproveMeApi.Integrations.Loan
 
     public class LoanIntegrationLoanModel
     {
+        public string ReferenceNumber { get; set; }
+        public LoanIntegrationLoanStatus? Status { get; set; }
+
         public LoanIntegrationServicerModel Servicers { get; set; }
         public LoanIntegrationVariablesModel Variables { get; set; }
         public LoanIntegrationLoanDataModel Data { get; set; }
@@ -184,7 +187,6 @@ namespace PreApproveMeApi.Integrations.Loan
         public LoanIntegrationPropertyDetailsModel SubjectProperty { get; set; }
         public List<LoanIntegrationMilestoneModel> Milestones { get; set; }
         public List<LoanIntegrationConditionModel> Conditions { get; set; }
-        public string ReferenceNumber { get; set; }
 
         public LoanIntegrationLoanCountryDataModel CountryData { get; set; }
     }
