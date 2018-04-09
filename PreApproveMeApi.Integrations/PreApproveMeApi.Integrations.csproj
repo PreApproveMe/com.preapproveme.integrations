@@ -59,6 +59,7 @@
     <Compile Include="Loan\Models\LoanIntegrationRealtorInfoModel.cs" />
     <Compile Include="Loan\Models\LoanIntegrationUserInfoModel.cs" />
     <Compile Include="Loan\Models\LoanIntegrationValueModel.cs" />
+    <Compile Include="Loan\Types\LoanIntegrationLoanStatus.cs" />
     <Compile Include="Loan\Types\LoanIntegrationAddressType.cs" />
     <Compile Include="Loan\Types\LoanIntegrationAmortization.cs" />
     <Compile Include="Loan\Types\LoanIntegrationAssetType.cs" />
