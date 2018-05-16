@@ -1,6 +1,6 @@
 ﻿namespace PreApproveMeApi.Integrations.Loan.Types
 {
-    public enum LoanIntegrationLoanStatus
+    public enum LoanIntegrationLoanStatus : long
     {
         Lead = 1,
         New = 2,
