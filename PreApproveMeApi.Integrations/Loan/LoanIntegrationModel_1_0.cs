@@ -51,6 +51,9 @@ namespace PreApproveMeApi.Integrations.Loan
         public List<LoanIntegrationBorrowerLifeInsuranceModel> LifeInsurance { get; set; }
 
         public LoanIntegrationBorrowerCountryDataModel CountryData { get; set; }
+
+        public bool SendEmailInvitation { get; set; }
+        public bool SendTextInvitation { get; set; }
     }
 
     public class LoanIntegrationEmploymentModel
@@ -189,6 +192,9 @@ namespace PreApproveMeApi.Integrations.Loan
         public List<LoanIntegrationConditionModel> Conditions { get; set; }
 
         public LoanIntegrationLoanCountryDataModel CountryData { get; set; }
+
+        public bool SendMilestoneNotifications { get; set; }
+        public bool SendConditionNotifications { get; set; }
     }
 
     public class LoanIntegrationServicerModel
