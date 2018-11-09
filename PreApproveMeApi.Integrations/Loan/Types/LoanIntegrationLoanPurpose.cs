@@ -5,6 +5,7 @@
         Purchase = 1,
         Refinance = 2,
         Construction = 3,
-        ConstructionPermanent = 4
+        ConstructionPermanent = 4,
+        HELOC = 5
     }
 }
