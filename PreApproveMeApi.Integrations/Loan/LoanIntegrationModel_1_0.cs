@@ -181,7 +181,7 @@ namespace PreApproveMeApi.Integrations.Loan
     public class LoanIntegrationLoanModel
     {
         public string ReferenceNumber { get; set; }
-        public LoanIntegrationLoanStatus? Status { get; set; }
+        public string Status { get; set; }
 
         public LoanIntegrationServicerModel Servicers { get; set; }
         public LoanIntegrationVariablesModel Variables { get; set; }
