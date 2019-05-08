@@ -11,5 +11,6 @@ namespace PreApproveMeApi.Integrations.Loan.Models
         public decimal? CostOfImprovements { get; set; }
         public LoanIntegrationRefinancePurpose? RefinancePurpose { get; set; }
         public bool? ImprovementsPending { get; set; }
+        public decimal? CashOut { get; set; }
     }
 }
