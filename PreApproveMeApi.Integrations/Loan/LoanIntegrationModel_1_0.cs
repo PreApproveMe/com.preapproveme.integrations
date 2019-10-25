@@ -35,7 +35,7 @@ namespace PreApproveMeApi.Integrations.Loan
         public string Nickname { get; set; }
         public int? YearsOfSchool { get; set; }
         public DateTime? Birthdate { get; set; }
-        public LoanIntegrationMaritalStatus? MartialStatus { get; set; }
+        public LoanIntegrationMaritalStatus? MaritalStatus { get; set; }
         public DateTime? SignatureDate { get; set; }
         public int? FICOScore { get; set; }
         public bool? AssetsJointlyHeld { get; set; }
