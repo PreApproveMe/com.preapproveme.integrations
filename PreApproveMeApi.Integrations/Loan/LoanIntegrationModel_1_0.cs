@@ -12,8 +12,11 @@ namespace PreApproveMeApi.Integrations.Loan
         public List<LoanIntegrationBorrowerPairModel> Borrowers { get; set; }
         public LoanIntegrationLoanModel Loan { get; set; }
         public LoanIntegrationCompanyModel Company { get; set; }
+        // Not currently supported, provided for future compatability.
         public LoanIntegrationCompanyModel TitleInsurance { get; set; }
+        // Servicer defined notes.
         public string Notes { get; set; }
+        // Servicer defined notes.
         public string ReferralInformation { get; set; }
 
         public new const string ModelVersion = "1.0";
@@ -37,6 +40,7 @@ namespace PreApproveMeApi.Integrations.Loan
         public DateTime? Birthdate { get; set; }
         public LoanIntegrationMaritalStatus? MaritalStatus { get; set; }
         public DateTime? SignatureDate { get; set; }
+        // Not currently supported, provided for future compatability.
         public int? FICOScore { get; set; }
         public bool? AssetsJointlyHeld { get; set; }
 
@@ -52,6 +56,7 @@ namespace PreApproveMeApi.Integrations.Loan
 
         public LoanIntegrationBorrowerCountryDataModel CountryData { get; set; }
 
+        // These indicators will trigger the onboarding process for a borrower if set as part of an import.
         public bool SendEmailInvitation { get; set; }
         public bool SendTextInvitation { get; set; }
     }
@@ -75,7 +80,8 @@ namespace PreApproveMeApi.Integrations.Loan
         [EmailAddress]
         public string Email { get; set; }
 
-        // This is listed for informational purposes only and will not be loaded as income
+        // This maps to field 04B-130 in the Fannie 3.2 specification and will not be loaded as income.
+        // If you want to add this value as income then it should be additionally listed under the Income key on the Borrower model.
         public decimal? MonthlyIncome { get; set; }
     }
 
@@ -193,6 +199,7 @@ namespace PreApproveMeApi.Integrations.Loan
 
         public LoanIntegrationLoanCountryDataModel CountryData { get; set; }
 
+        // If milestones or conditions data has been updated as part of the request and these indicators are set then the system will send notifications to affected borrowers.
         public bool SendMilestoneNotifications { get; set; }
         public bool SendConditionNotifications { get; set; }
     }
@@ -229,7 +236,6 @@ namespace PreApproveMeApi.Integrations.Loan
         public int TermMonths { get; set; }
         public LoanIntegrationAmortization Amortization { get; set; }
         public decimal? InterestRate { get; set; }
-        //public decimal? RateAdjustment { get; set; }
         public decimal? OriginationFees { get; set; }
         public decimal? ClosingCosts { get; set; }
         public LoanIntegrationValueModel MortgageInsurance { get; set; }
@@ -244,8 +250,10 @@ namespace PreApproveMeApi.Integrations.Loan
         public string Name { get; set; }
         public string Description { get; set; }
         public DateTime? CompletionDate { get; set; }
+        // UI display order of the milestone.
         public int? Order { get; set; }
         public string ReferenceNumber { get; set; }
+        // Indicator for if the milestone is used for internal processes or tracking purposes rather than a milestone that should be borrower-facing.
         public bool? InternalMilestone { get; set; }
     }
 
@@ -256,6 +264,7 @@ namespace PreApproveMeApi.Integrations.Loan
         public LoanIntegrationConditionStatus Status { get; set; }
         public DateTime? DueDate { get; set; }
         public string ReferenceNumber { get; set; }
+        // List of emails of users assigned to complete this condition.
         public List<string> Assigned { get; set; }
         public List<LoanIntegrationConditionFileModel> Files { get; set; }
     }
@@ -264,8 +273,12 @@ namespace PreApproveMeApi.Integrations.Loan
     {
         public string Name { get; set; }
         public string Description { get; set; }
-        public string Link { get; set; } // Need to require that the file is a valid PDF
-        public LoanIntegrationConditionStatus Status { get; set; } // Somewhat undefined until we get around to reworking conditions better
+        // Pre-Approve Me stores all files in PDF format.
+        // When importing, in order to ensure that the file is usable and viewable, it should be a PDF.
+        // When exporting, the file exported will be a PDF.
+        public string Link { get; set; }
+        // Independent condition status for condition files will be coming in the conditions patch scheduled for Q1 2020.
+        public LoanIntegrationConditionStatus Status { get; set; }
         public string ReferenceNumber { get; set; }
     }
 

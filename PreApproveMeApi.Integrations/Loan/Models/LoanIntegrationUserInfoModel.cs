@@ -14,6 +14,7 @@ namespace PreApproveMeApi.Integrations.Loan.Models
 
         public string Suffix { get; set; }
 
+        // Email address is used as the primary identifier for user records in Pre-Approve Me.
         [Required]
         [EmailAddress]
         public string Email { get; set; }
