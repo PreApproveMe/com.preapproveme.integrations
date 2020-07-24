@@ -33,6 +33,7 @@ namespace PreApproveMeApi.Integrations.Loan
 
     public sealed class LoanIntegrationBorrowerModel : LoanIntegrationUserInfoModel
     {
+        public long PamID { get; set; }
         public string SSN { get; set; }
 
         public string Nickname { get; set; }
@@ -186,6 +187,7 @@ namespace PreApproveMeApi.Integrations.Loan
 
     public class LoanIntegrationLoanModel
     {
+        public long PamID { get; set; }
         public string ReferenceNumber { get; set; }
         public string Status { get; set; }
 
