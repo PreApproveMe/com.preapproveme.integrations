@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace PreApproveMeApi.Integrations.Loan.Models
+namespace PreApproveMeApi.Integrations.Loan.Models.V1
 {
     public class LoanIntegrationRealtorInfoModel : LoanIntegrationUserInfoModel
     {

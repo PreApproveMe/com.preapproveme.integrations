@@ -14,7 +14,9 @@ namespace PreApproveMeApi.Integrations.Loan
     /// </summary>
     public class LoanIntegrationBaseModel
     {
-        public const string ModelVersion = null;
         public string Version { get; set; }
+
+        // Deprecated
+        public const string ModelVersion = null;
     }
 }

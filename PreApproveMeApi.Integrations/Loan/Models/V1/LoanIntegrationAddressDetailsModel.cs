@@ -1,6 +1,6 @@
 ﻿using PreApproveMeApi.Integrations.Loan.Types;
 
-namespace PreApproveMeApi.Integrations.Loan.Models
+namespace PreApproveMeApi.Integrations.Loan.Models.V1
 {
     public class LoanIntegrationAddressDetailsModel : LoanIntegrationAddressModel
     {
