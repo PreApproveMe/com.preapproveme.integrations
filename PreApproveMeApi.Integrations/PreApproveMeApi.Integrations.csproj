@@ -58,7 +58,7 @@
   <ItemGroup>
     <Compile Include="Loan\LoanIntegrationBaseModel.cs" />
     <Compile Include="Loan\LoanIntegrationModel_1_0.cs" />
-    <Compile Include="Loan\LoanIntegrationModel_3_4.cs" />
+    <Compile Include="Loan\LoanIntegrationModel_2_0.cs" />
     <Compile Include="Loan\Models\V1\Borrowers\LoanIntegrationBorrowerUnitedStatesDataModel.cs" />
     <Compile Include="Loan\Models\V1\Borrowers\LoanIntegrationBorrowerCountryDataModel.cs" />
     <Compile Include="Loan\Models\V1\Borrowers\LoanIntegrationBorrowerLifeInsuranceModel.cs" />
@@ -94,6 +94,33 @@
     <Compile Include="Loan\Models\V1\Loan\LoanIntegrationVariablesModel.cs" />
     <Compile Include="Loan\Models\V1\Loan\LoanIntegrationServicerModel.cs" />
     <Compile Include="Loan\Models\V1\Loan\LoanIntegrationLoanModel.cs" />
+    <Compile Include="Loan\Models\V2\Applications\LoanIntegrationLiabilityModel.cs" />
+    <Compile Include="Loan\Models\V2\Applications\LoanIntegrationHousingExpenseModel.cs" />
+    <Compile Include="Loan\Models\V2\Applications\LoanIntegrationAssetModel.cs" />
+    <Compile Include="Loan\Models\V2\Borrowers\LoanIntegrationMilitaryServiceModel.cs" />
+    <Compile Include="Loan\Models\V2\Borrowers\LoanIntegrationGovernmentMonitoringModel.cs" />
+    <Compile Include="Loan\Models\V2\Borrowers\LoanIntegrationBorrowerDeclarationsModel.cs" />
+    <Compile Include="Loan\Models\V2\Borrowers\LoanIntegrationDependentModel.cs" />
+    <Compile Include="Loan\Models\V2\Borrowers\LoanIntegrationIncomeModel.cs" />
+    <Compile Include="Loan\Models\V2\Borrowers\LoanIntegrationEmployerModel.cs" />
+    <Compile Include="Loan\Models\V2\Borrowers\LoanIntegrationBorrowerModel.cs" />
+    <Compile Include="Loan\Models\V2\Applications\LoanIntegrationInvestmentPropertyDetailsModel.cs" />
+    <Compile Include="Loan\Models\V2\Applications\LoanIntegrationConstructionDetailsModel.cs" />
+    <Compile Include="Loan\Models\V2\Applications\LoanIntegrationResidenceDetailsModel.cs" />
+    <Compile Include="Loan\Models\V2\Applications\LoanIntegrationPropertyModel.cs" />
+    <Compile Include="Loan\Models\V2\Applications\LoanIntegrationApplicationModel.cs" />
+    <Compile Include="Loan\Models\V2\LoanIntegrationAddressModel.cs" />
+    <Compile Include="Loan\Models\V2\Loan\LoanIntegrationConditionFileModel.cs" />
+    <Compile Include="Loan\Models\V2\Loan\LoanIntegrationConditionModel.cs" />
+    <Compile Include="Loan\Models\V2\Loan\LoanIntegrationLoanTermsModel.cs" />
+    <Compile Include="Loan\Models\V2\Loan\LoanIntegrationLoanProgramModel.cs" />
+    <Compile Include="Loan\Models\V2\Loan\LoanIntegrationMilestoneModel.cs" />
+    <Compile Include="Loan\Models\V2\Loan\LoanIntegrationServicerModel.cs" />
+    <Compile Include="Loan\Models\V2\Loan\LoanIntegrationLoanDeclarationsModel.cs" />
+    <Compile Include="Loan\Models\V2\Loan\LoanIntegrationRefinanceDetailsModel.cs" />
+    <Compile Include="Loan\Models\V2\Loan\LoanIntegrationStaffModel.cs" />
+    <Compile Include="Loan\Models\V2\Loan\LoanIntegrationCompanyModel.cs" />
+    <Compile Include="Loan\Models\V2\Loan\LoanIntegrationLoanModel.cs" />
     <Compile Include="Loan\Types\LoanIntegrationAddressType.cs" />
     <Compile Include="Loan\Types\LoanIntegrationAmortization.cs" />
     <Compile Include="Loan\Types\LoanIntegrationAssetType.cs" />
@@ -115,11 +142,36 @@
     <Compile Include="Loan\Types\LoanIntegrationResidenceType.cs" />
     <Compile Include="Loan\Types\LoanIntegrationTitleType.cs" />
     <Compile Include="Loan\Types\LoanIntegrationValueType.cs" />
+    <Compile Include="Loan\Types\V2\LoanIntegrationLoanCategory.cs" />
+    <Compile Include="Loan\Types\V2\LoanIntegrationLiabilityType.cs" />
+    <Compile Include="Loan\Types\V2\LoanIntegrationGiftSourceType.cs" />
+    <Compile Include="Loan\Types\V2\LoanIntegrationAssetType.cs" />
+    <Compile Include="Loan\Types\V2\LoanIntegrationGenderType.cs" />
+    <Compile Include="Loan\Types\V2\LoanIntegrationMilitaryServiceType.cs" />
+    <Compile Include="Loan\Types\V2\LoanIntegrationCompanyType.cs" />
+    <Compile Include="Loan\Types\V2\LoanIntegrationTaxpayerIdentifierType.cs" />
+    <Compile Include="Loan\Types\V2\LoanIntegrationRaceSubType.cs" />
+    <Compile Include="Loan\Types\V2\LoanIntegrationRaceType.cs" />
+    <Compile Include="Loan\Types\V2\LoanIntegrationHispanicEthnicityOriginType.cs" />
+    <Compile Include="Loan\Types\V2\LoanIntegrationHispanicEthnicityType.cs" />
+    <Compile Include="Loan\Types\V2\LoanIntegrationCitizenshipType.cs" />
+    <Compile Include="Loan\Types\V2\LoanIntegrationBankruptcyType.cs" />
+    <Compile Include="Loan\Types\V2\LoanIntegrationLienType.cs" />
+    <Compile Include="Loan\Types\V2\LoanIntegrationLoanType.cs" />
+    <Compile Include="Loan\Types\V2\LoanIntegrationHousingExpenseType.cs" />
+    <Compile Include="Loan\Types\V2\LoanIntegrationConstructionMethodType.cs" />
+    <Compile Include="Loan\Types\V2\LoanIntegrationEmployerOwnershipInterest.cs" />
+    <Compile Include="Loan\Types\V2\LoanIntegrationGeneralAdministrativeRegionType.cs" />
+    <Compile Include="Loan\Types\V2\LoanIntegrationIncomeType.cs" />
+    <Compile Include="Loan\Types\V2\LoanIntegrationPropertyUnitType.cs" />
+    <Compile Include="Loan\Types\V2\LoanIntegrationPropertyType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="MyPrivateKey.snk" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Loan\Types\V1\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
