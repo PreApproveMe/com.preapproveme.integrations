@@ -121,22 +121,22 @@
     <Compile Include="Loan\Models\V2\Loan\LoanIntegrationStaffModel.cs" />
     <Compile Include="Loan\Models\V2\Loan\LoanIntegrationCompanyModel.cs" />
     <Compile Include="Loan\Models\V2\Loan\LoanIntegrationLoanModel.cs" />
-    <Compile Include="Loan\Types\LoanIntegrationAddressType.cs" />
+    <Compile Include="Loan\Types\V1\LoanIntegrationAddressType.cs" />
     <Compile Include="Loan\Types\LoanIntegrationAmortization.cs" />
-    <Compile Include="Loan\Types\LoanIntegrationAssetType.cs" />
+    <Compile Include="Loan\Types\V1\LoanIntegrationAssetType.cs" />
     <Compile Include="Loan\Types\LoanIntegrationConditionStatus.cs" />
-    <Compile Include="Loan\Types\LoanIntegrationDebtType.cs" />
+    <Compile Include="Loan\Types\V1\LoanIntegrationDebtType.cs" />
     <Compile Include="Loan\Types\LoanIntegrationEmploymentStatus.cs" />
-    <Compile Include="Loan\Types\LoanIntegrationEthnicity.cs" />
+    <Compile Include="Loan\Types\V1\LoanIntegrationEthnicity.cs" />
     <Compile Include="Loan\Types\LoanIntegrationFrequencyType.cs" />
-    <Compile Include="Loan\Types\LoanIntegrationGender.cs" />
-    <Compile Include="Loan\Types\LoanIntegrationIncomeType.cs" />
+    <Compile Include="Loan\Types\V1\LoanIntegrationGender.cs" />
+    <Compile Include="Loan\Types\V1\LoanIntegrationIncomeType.cs" />
     <Compile Include="Loan\Types\LoanIntegrationLoanPurpose.cs" />
     <Compile Include="Loan\Types\LoanIntegrationMaritalStatus.cs" />
     <Compile Include="Loan\Types\LoanIntegrationProgramType.cs" />
     <Compile Include="Loan\Types\LoanIntegrationQualificationType.cs" />
     <Compile Include="Loan\Types\LoanIntegrationRealEstateStatus.cs" />
-    <Compile Include="Loan\Types\LoanIntegrationRealEstateType.cs" />
+    <Compile Include="Loan\Types\V1\LoanIntegrationRealEstateType.cs" />
     <Compile Include="Loan\Types\LoanIntegrationRefinancePurpose.cs" />
     <Compile Include="Loan\Types\LoanIntegrationResidenceOwnership.cs" />
     <Compile Include="Loan\Types\LoanIntegrationResidenceType.cs" />
@@ -170,8 +170,6 @@
   <ItemGroup>
     <None Include="MyPrivateKey.snk" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Loan\Types\V1\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

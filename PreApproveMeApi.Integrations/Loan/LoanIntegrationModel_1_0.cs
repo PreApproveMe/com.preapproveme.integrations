@@ -21,9 +21,5 @@ namespace PreApproveMeApi.Integrations.Loan
         public string Notes { get; set; }
         // Servicer defined notes.
         public string ReferralInformation { get; set; }
-
-        // Deprecated
-        public new const string ModelVersion = "1.0";
-        public LoanIntegrationModel_1_0() { Version = ModelVersion; }
     }
 }

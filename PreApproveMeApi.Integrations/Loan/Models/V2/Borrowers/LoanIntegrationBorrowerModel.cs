@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
+using PreApproveMeApi.Integrations.Loan.Types;
 using PreApproveMeApi.Integrations.Loan.Types.V2;
 
 namespace PreApproveMeApi.Integrations.Loan.Models.V2.Borrowers
@@ -22,7 +23,7 @@ namespace PreApproveMeApi.Integrations.Loan.Models.V2.Borrowers
         public string TPI { get; set; }
         public LoanIntegrationTaxpayerIdentifierType? TPIType { get; set; }
         public DateTime? Birthdate { get; set; }
-        public Types.LoanIntegrationMaritalStatus? MaritalStatus { get; set; }
+        public LoanIntegrationMaritalStatus? MaritalStatus { get; set; }
         public DateTime? SignatureDate { get; set; }
 
         // These indicators will trigger the onboarding process for a borrower if set as part of an import.

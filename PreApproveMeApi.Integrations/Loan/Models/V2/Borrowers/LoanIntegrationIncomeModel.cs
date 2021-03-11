@@ -10,6 +10,5 @@ namespace PreApproveMeApi.Integrations.Loan.Models.V2.Borrowers
         public string OtherDescription { get; set; }
         public bool? ForeignIncome { get; set; }
         public bool? SeasonalIncome { get; set; }
-        //public bool? PresentIncome { get; set; } // This can be represented by being linked to an employer with an end date that is not null
     }
 }

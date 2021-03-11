@@ -1,4 +1,4 @@
-﻿namespace PreApproveMeApi.Integrations.Loan.Types
+﻿namespace PreApproveMeApi.Integrations.Loan.Types.V1
 {
     public enum LoanIntegrationIncomeType
     {

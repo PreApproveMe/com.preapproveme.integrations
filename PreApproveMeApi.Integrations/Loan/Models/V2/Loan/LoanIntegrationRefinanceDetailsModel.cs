@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-using PreApproveMeApi.Integrations.Loan.Models.V2.Applications;
-using PreApproveMeApi.Integrations.Loan.Types;
+﻿using PreApproveMeApi.Integrations.Loan.Types;
 
 namespace PreApproveMeApi.Integrations.Loan.Models.V2.Loan
 {
