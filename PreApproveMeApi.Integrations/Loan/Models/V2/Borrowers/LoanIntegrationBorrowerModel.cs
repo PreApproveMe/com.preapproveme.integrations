@@ -6,7 +6,7 @@ using PreApproveMeApi.Integrations.Loan.Types.V2;
 
 namespace PreApproveMeApi.Integrations.Loan.Models.V2.Borrowers
 {
-    public class LoanIntegrationBorrowerModel
+    public class LoanIntegrationBorrowerModel : LoanIntegrationUserInfoModel
     {
         public long PamID { get; set; }
         public string ModelID { get; set; }
