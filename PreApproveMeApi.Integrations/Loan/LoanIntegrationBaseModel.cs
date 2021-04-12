@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Reflection;
 using System.Linq;
 using System.Collections.Generic;
@@ -15,5 +16,10 @@ namespace PreApproveMeApi.Integrations.Loan
     public class LoanIntegrationBaseModel
     {
         public string Version { get; set; }
+
+        public LoanIntegrationBaseModel()
+        {
+            Version = GetType().GetCustomAttribute<DescriptionAttribute>()?.Description
+        }
     }
 }
