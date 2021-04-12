@@ -19,7 +19,7 @@ namespace PreApproveMeApi.Integrations.Loan
 
         public LoanIntegrationBaseModel()
         {
-            Version = GetType().GetCustomAttribute<DescriptionAttribute>()?.Description
+            Version = GetType().GetCustomAttribute<DescriptionAttribute>()?.Description;
         }
     }
 }
