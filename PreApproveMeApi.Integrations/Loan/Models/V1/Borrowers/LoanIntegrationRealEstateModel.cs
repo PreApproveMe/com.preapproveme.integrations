@@ -14,5 +14,6 @@ namespace PreApproveMeApi.Integrations.Loan.Models.V1.Borrowers
         public decimal? MortgagePayments { get; set; }
         public decimal? OtherCosts { get; set; }
         public decimal? NetRentalIncome { get; set; }
+        public int FinanceID { get; set; }
     }
 }

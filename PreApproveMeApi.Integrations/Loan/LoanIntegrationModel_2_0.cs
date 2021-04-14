@@ -4,6 +4,8 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 using PreApproveMeApi.Integrations.Loan.Models.V2.Loan;
+using PreApproveMeApi.Integrations.Loan.Models.V2;
+using PreApproveMeApi.Integrations.Loan.Models.V2.Borrowers;
 
 namespace PreApproveMeApi.Integrations.Loan
 {
