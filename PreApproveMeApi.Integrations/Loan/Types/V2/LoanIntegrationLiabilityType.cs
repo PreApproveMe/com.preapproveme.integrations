@@ -13,6 +13,7 @@
         Alimony = 9,
         ChildSupport = 10,
         JobRelatedExpenses = 11,
-        SeparateMaintenanceExpense = 12
+        SeparateMaintenanceExpense = 12,
+        OtherExpense = 13
     }
 }

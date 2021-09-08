@@ -13,6 +13,7 @@ namespace PreApproveMeApi.Integrations.Loan.Models.V2.Applications
         public decimal? AssessedValue { get; set; }
         public decimal? NetRentalIncomeMonthly { get; set; }
         public decimal? GrossRentalIncomeMonthly { get; set; }
+        public int? NumberOfUnits { get; set; }
         public List<LoanIntegrationHousingExpenseModel> Expenses { get; set; }
         public LoanIntegrationResidenceDetailsModel ResidenceDetails { get; set; }
         public LoanIntegrationInvestmentPropertyDetailsModel InvestmentDetails { get; set; }
