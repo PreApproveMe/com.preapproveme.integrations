@@ -3,9 +3,7 @@
     public enum LoanIntegrationMilitaryServiceType
     {
         ActiveDuty = 1,
-        Reserve = 2,
-        NationalGuard = 3,
-        NeverActivated = 4,
-        Veteran = 5
+        Veteran = 5,
+        ReserveNationalGuardNeverActivated = 6
     }
 }
