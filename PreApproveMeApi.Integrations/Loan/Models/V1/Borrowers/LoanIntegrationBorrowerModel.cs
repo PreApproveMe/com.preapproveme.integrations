@@ -7,7 +7,7 @@ namespace PreApproveMeApi.Integrations.Loan.Models.V1.Borrowers
 {
     public sealed class LoanIntegrationBorrowerModel : LoanIntegrationUserInfoModel
     {
-        public long PamID { get; set; }
+        public long? PamID { get; set; }
         public string SSN { get; set; }
 
         public string Nickname { get; set; }
@@ -32,7 +32,7 @@ namespace PreApproveMeApi.Integrations.Loan.Models.V1.Borrowers
         public LoanIntegrationBorrowerCountryDataModel CountryData { get; set; }
 
         // These indicators will trigger the onboarding process for a borrower if set as part of an import.
-        public bool SendEmailInvitation { get; set; }
-        public bool SendTextInvitation { get; set; }
+        public bool? SendEmailInvitation { get; set; }
+        public bool? SendTextInvitation { get; set; }
     }
 }
