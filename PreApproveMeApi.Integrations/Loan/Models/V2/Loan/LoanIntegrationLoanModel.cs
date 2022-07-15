@@ -16,9 +16,9 @@ namespace PreApproveMeApi.Integrations.Loan.Models.V2.Loan
         public string Status { get; set; }
 
         public LoanIntegrationLoanType LoanType { get; set; }
-        public LoanIntegrationLienType LienType { get; set; }
-        public List<LoanIntegrationApplicationModel> Applications { get; set; }
+        public LoanIntegrationLienType? LienType { get; set; }
 
+        public List<LoanIntegrationApplicationModel> Applications { get; set; }
         public LoanIntegrationCompanyModel OriginationCompany { get; set; }
         public LoanIntegrationStaffModel OriginationStaff { get; set; }
         public List<LoanIntegrationServicerModel> LoanServicers { get; set; }

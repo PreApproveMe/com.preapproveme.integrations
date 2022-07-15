@@ -11,6 +11,10 @@ namespace PreApproveMeApi.Integrations.Loan.Models.V2.Borrowers
         public long PamID { get; set; }
         public string ModelID { get; set; }
         public List<string> ReferenceID { get; set; }
+        public string Email { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Phone { get; set; }
 
         public List<LoanIntegrationEmployerModel> Employers { get; set; }
         public List<LoanIntegrationIncomeModel> Income { get; set; }
