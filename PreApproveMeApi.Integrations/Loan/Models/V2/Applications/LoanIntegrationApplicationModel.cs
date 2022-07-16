@@ -4,6 +4,9 @@ using PreApproveMeApi.Integrations.Loan.Models.V2.Borrowers;
 
 namespace PreApproveMeApi.Integrations.Loan.Models.V2.Applications
 {
+    /// <summary>
+    /// Representation of a loan application
+    /// </summary>
     public class LoanIntegrationApplicationModel
     {
         public LoanIntegrationBorrowerModel PrimaryBorrower { get; set; }

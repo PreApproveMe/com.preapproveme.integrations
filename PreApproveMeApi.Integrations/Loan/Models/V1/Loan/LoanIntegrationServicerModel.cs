@@ -2,6 +2,9 @@
 
 namespace PreApproveMeApi.Integrations.Loan.Models.V1.Loan
 {
+    /// <summary>
+    /// Origination staff working on the loan
+    /// </summary>
     public class LoanIntegrationServicerModel
     {
         public LoanIntegrationUserInfoModel LoanOfficer { get; set; }

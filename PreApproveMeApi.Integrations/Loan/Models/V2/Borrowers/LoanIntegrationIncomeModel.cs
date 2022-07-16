@@ -5,10 +5,18 @@ namespace PreApproveMeApi.Integrations.Loan.Models.V2.Borrowers
     public class LoanIntegrationIncomeModel
     {
         public decimal? AmountMonthly { get; set; }
-        public string AssociatedEmployer { get; set; } // ID of employer this income is linked to, if any
+
+        /// <summary>
+        /// ModelID of the employer that this income is associated with, if any
+        /// </summary>
+        public string AssociatedEmployer { get; set; }
+
         public LoanIntegrationIncomeType Type { get; set; }
+
         public string OtherDescription { get; set; }
+
         public bool? ForeignIncome { get; set; }
+
         public bool? SeasonalIncome { get; set; }
     }
 }

@@ -6,6 +6,9 @@ using PreApproveMeApi.Integrations.Loan.Types.V2;
 
 namespace PreApproveMeApi.Integrations.Loan.Models.V2.Applications
 {
+    /// <summary>
+    /// Details of a current or previous residence
+    /// </summary>
     public class LoanIntegrationResidenceDetailsModel
     {
         public DateTime? ResidenceStart { get; set; }

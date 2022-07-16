@@ -2,6 +2,9 @@
 
 namespace PreApproveMeApi.Integrations.Loan.Models.V1
 {
+    /// <summary>
+    /// Origination company details
+    /// </summary>
     public class LoanIntegrationCompanyModel : LoanIntegrationAddressModel
     {
         public string Name { get; set; }

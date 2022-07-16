@@ -25,6 +25,7 @@ namespace PreApproveMeApi.Integrations.Loan.Models.V2.Borrowers
         public bool? UndisclosedCreditApplication { get; set; }
         public bool? UndisclosedMortgageApplication { get; set; }
         public bool? BorrowerSellerSpecialRelationship { get; set; }
+
         public bool? AZPropertySaleToQualify { get; set; }
         public bool? AZSellerConcessionsLoanCosts { get; set; }
         public bool? AZDownPaymentAssistance { get; set; }

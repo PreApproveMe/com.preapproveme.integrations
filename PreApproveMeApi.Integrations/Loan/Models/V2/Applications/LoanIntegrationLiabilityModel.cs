@@ -5,8 +5,14 @@ using PreApproveMeApi.Integrations.Loan.Types.V2;
 
 namespace PreApproveMeApi.Integrations.Loan.Models.V2.Applications
 {
+    /// <summary>
+    /// Details of a liability or nonhousing expense associated with one or more borrowers.
+    /// </summary>
     public class LoanIntegrationLiabilityModel
     {
+        /// <summary>
+        /// List of borrower ModelIDs associated with the liability or nonhousing expense.
+        /// </summary>
         public List<string> AssociatedBorrowers { get; set; }
         public LoanIntegrationLiabilityType? LiabilityType { get; set; }
         public string LiabilityTypeOtherDescription { get; set; }

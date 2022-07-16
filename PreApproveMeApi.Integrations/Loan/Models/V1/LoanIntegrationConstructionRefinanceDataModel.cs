@@ -2,6 +2,9 @@
 
 namespace PreApproveMeApi.Integrations.Loan.Models.V1
 {
+    /// <summary>
+    /// Construction and refinance details
+    /// </summary>
     public class LoanIntegrationConstructionRefinanceDataModel
     {
         public int? YearAcquired { get; set; }

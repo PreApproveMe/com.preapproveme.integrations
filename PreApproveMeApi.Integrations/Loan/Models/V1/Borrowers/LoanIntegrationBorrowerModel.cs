@@ -15,7 +15,10 @@ namespace PreApproveMeApi.Integrations.Loan.Models.V1.Borrowers
         public DateTime? Birthdate { get; set; }
         public LoanIntegrationMaritalStatus? MaritalStatus { get; set; }
         public DateTime? SignatureDate { get; set; }
-        // Not currently supported, provided for future compatability.
+
+        /// <summary>
+        /// Not currently supported, provided for future compatability.
+        /// </summary>
         public int? FICOScore { get; set; }
         public bool? AssetsJointlyHeld { get; set; }
 
@@ -31,7 +34,9 @@ namespace PreApproveMeApi.Integrations.Loan.Models.V1.Borrowers
 
         public LoanIntegrationBorrowerCountryDataModel CountryData { get; set; }
 
-        // These indicators will trigger the onboarding process for a borrower if set as part of an import.
+        /// <summary>
+        /// These indicators will trigger the onboarding process for a borrower if set as part of an import.
+        /// </summary>
         public bool? SendEmailInvitation { get; set; }
         public bool? SendTextInvitation { get; set; }
     }

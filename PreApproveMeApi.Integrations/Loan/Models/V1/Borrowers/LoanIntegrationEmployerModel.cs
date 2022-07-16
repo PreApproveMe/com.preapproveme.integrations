@@ -17,8 +17,11 @@ namespace PreApproveMeApi.Integrations.Loan.Models.V1.Borrowers
         [EmailAddress]
         public string Email { get; set; }
 
-        // This maps to field 04B-130 in the Fannie 3.2 specification and will not be loaded as income.
-        // If you want to add this value as income then it should be additionally listed under the Income key on the Borrower model.
+        /// <summary>
+        /// This maps to field 04B-130 in the Fannie 3.2 specification and will not be loaded as income.
+        /// If you want to add this value as income then it should be additionally listed under the Income key on the Borrower model.
+        /// </summary>
+
         public decimal? MonthlyIncome { get; set; }
     }
 }

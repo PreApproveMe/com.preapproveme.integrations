@@ -3,6 +3,9 @@ using PreApproveMeApi.Integrations.Loan.Types.V1;
 
 namespace PreApproveMeApi.Integrations.Loan.Models.V1
 {
+    /// <summary>
+    /// Subject Property Details
+    /// </summary>
     public class LoanIntegrationPropertyDetailsModel : LoanIntegrationAddressModel
     {
         public int? NumberOfUnits { get; set; }

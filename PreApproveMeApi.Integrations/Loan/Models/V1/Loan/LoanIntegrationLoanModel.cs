@@ -18,7 +18,9 @@ namespace PreApproveMeApi.Integrations.Loan.Models.V1.Loan
 
         public LoanIntegrationLoanCountryDataModel CountryData { get; set; }
 
-        // If milestones or conditions data has been updated as part of the request and these indicators are set then the system will send notifications to affected borrowers.
+        /// <summary>
+        /// If milestones or conditions data has been updated as part of the request and these indicators are set then the system will send notifications to affected borrowers.
+        /// </summary>
         public bool? SendMilestoneNotifications { get; set; }
         public bool? SendConditionNotifications { get; set; }
     }

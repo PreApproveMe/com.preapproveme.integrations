@@ -1,5 +1,8 @@
 ﻿namespace PreApproveMeApi.Integrations.Loan.Models.V1
 {
+    /// <summary>
+    /// Arizona specific conditions for the Arizona prequal form.
+    /// </summary>
     public class LoanIntegrationAZConditionsModel
     {
         public bool? Paystubs { get; set; }

@@ -8,8 +8,19 @@ namespace PreApproveMeApi.Integrations.Loan.Models.V2.Borrowers
 {
     public class LoanIntegrationBorrowerModel : LoanIntegrationUserInfoModel
     {
+        /// <summary>
+        /// ID of the borrower record in Pre-Approve Me
+        /// </summary>
         public long PamID { get; set; }
+
+        /// <summary>
+        /// Internal model ID used to link e.g. assets to borrowers
+        /// </summary>
         public string ModelID { get; set; }
+
+        /// <summary>
+        /// Third party reference number(s) set on the object
+        /// </summary>
         public List<string> ReferenceID { get; set; }
 
         public List<LoanIntegrationEmployerModel> Employers { get; set; }
@@ -26,7 +37,9 @@ namespace PreApproveMeApi.Integrations.Loan.Models.V2.Borrowers
         public LoanIntegrationMaritalStatus? MaritalStatus { get; set; }
         public DateTime? SignatureDate { get; set; }
 
-        // These indicators will trigger the onboarding process for a borrower if set as part of an import.
+        /// <summary>
+        /// These indicators will trigger the onboarding process for a borrower if set as part of an import.
+        /// </summary>
         public bool SendEmailInvitation { get; set; }
         public bool SendTextInvitation { get; set; }
     }
