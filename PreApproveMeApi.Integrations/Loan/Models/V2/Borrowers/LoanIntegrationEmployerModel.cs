@@ -38,5 +38,7 @@ namespace PreApproveMeApi.Integrations.Loan.Models.V2.Borrowers
         public bool? PrimaryEmployer { get; set; }
 
         public bool? EmployerIsCorporation { get; set; }
+
+        public decimal? PreviousEmploymentMonthlyIncome { get; set; }
     }
 }
