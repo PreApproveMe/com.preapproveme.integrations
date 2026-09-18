@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PreApproveMeApi.Integrations</RootNamespace>
     <AssemblyName>PreApproveMeApi.Integrations</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -166,6 +166,11 @@
     <Compile Include="Loan\Types\V2\LoanIntegrationPropertyUnitType.cs" />
     <Compile Include="Loan\Types\V2\LoanIntegrationPropertyType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User\UserIntegrationShareModel.cs" />
+    <Compile Include="User\UserIntegrationMessageModel.cs" />
+    <Compile Include="User\UserIntegrationModel.cs" />
+    <Compile Include="User\UserIntegrationDataModel.cs" />
+    <Compile Include="User\UserIntegrationBaseModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="MyPrivateKey.snk" />
